@@ -1,0 +1,10 @@
+@import "./color.scss";
+
+div {
+    display: inline-block;
+    background: $test;
+}
+
+.wrapper {
+    margin: 16px;
+}
