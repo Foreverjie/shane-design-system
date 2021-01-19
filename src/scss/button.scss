@@ -1,42 +1,59 @@
 @use "sass:map";
 
 .btn {
-    line-height: 1.5715;
-    position: relative;
-    display: inline-block;
-    font-weight: 400;
-    white-space: nowrap;
-    text-align: center;
-    background-image: none;
-    box-shadow: 0 2px 0 rgba(0,0,0,.015);
-    cursor: pointer;
-    transition: all .3s cubic-bezier(.645,.045,.355,1);
-    height: 32px;
-    padding: 4px 15px;
-    font-size: 14px;
-    border-radius: 2px;
-    color: map-get($map: $text-colors, $key: dark);
-    background: map-get($map: $bg-colors, $key: light);
-    border: 1px solid #d9d9d9;
-  }
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  box-shadow: 0 2px 0 rgba(0,0,0,.015);
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: map-get($map: $text-colors, $key: dark);
+  background: map-get($map: $bg-colors, $key: light);
+  border: 1px solid #d9d9d9;
+}
   
-  .btn:focus, .btn:hover {
-      color: #40a9ff;
-      background: #fff;
-      border-color: #40a9ff;
-  }
-  
-  .btn-primary {
-    color: #fff;
-    background: #1890ff;
-    border-color: #1890ff;
-    text-shadow: 0 -1px 0 rgba(0,0,0,.12);
-    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.045);
-    box-shadow: 0 2px 0 rgba(0,0,0,.045);
-  }
-  
-  .btn-primary:focus, .btn-primary:hover {
-    color: #fff;
-    background: #40a9ff;
-    border-color: #40a9ff;
-  }
+.btn:focus, .btn:hover {
+  color: #40a9ff;
+  background: #fff;
+  border-color: #40a9ff;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #1890ff;
+  border-color: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.045);
+  box-shadow: 0 2px 0 rgba(0,0,0,.045);
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  color: #fff;
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.btn-icon-only {
+  width: 32px;
+  height: 32px;
+  padding: 2.4px 0;
+  font-size: 16px;
+  border-radius: 2px;
+  vertical-align: -1px;
+}
+
+.btn-circle {
+  min-width: 32px;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  border-radius: 50%;
+}

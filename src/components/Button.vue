@@ -1,7 +1,14 @@
 <template>
   <div class="wrapper">
-    <button class="btn" :class="[type ? `btn-${type}`: '']">
-      <span>{{ content }}</span>
+    <button class="btn" :class="[
+      type ? `btn-${type}`: '',
+      shape ? `btn-${shape}`: '',
+      content ? '': 'btn-icon-only',
+    ]">
+      <span>
+        {{ content }}
+        <slot />
+      </span>
     </button>
   </div>
 </template>
@@ -14,6 +21,7 @@ export default defineComponent({
   props: {
     content: String,
     type: String,
+    shape: String,
   },
 });
 </script>
